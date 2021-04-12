@@ -4,6 +4,7 @@ library(forcats)
 library(hrbrthemes)
 library(corrplot)
 library(RColorBrewer)
+library(ggplot2)
 
 imdb_top_1000 <- read_csv("C:/Users/Lenovo/Downloads/imdb_top_1000.csv",
                           col_types = cols(Certificate = col_factor(levels = c()),
@@ -61,8 +62,7 @@ New_Genre <- imdb_top_1000 %>%
 #Inflation Factor each decade ( Valuation to 2021)
 
 infl <- data.frame(decade = c("20's","30's", "40's", "50's", "60's", "70's", "80's", "90's", "2000's","2010's", "2020's"), 
-                     one_plus_inflation = c(15.03, 19.2, 14.61,9.81, 8.35, 4.89, 2.44, 1.73, 1.35, 1.11,1 ))
+                   one_plus_inflation = c(15.03, 19.2, 14.61,9.81, 8.35, 4.89, 2.44, 1.73, 1.35, 1.11,1 ))
 
-                   
-                   
-                   
+
+
